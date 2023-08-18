@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsWebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav>
+          <div class="nav-container container">
+                  
+                   <div class="logo-box" onclick="reload()">
+                    <img src="#ga"  alt="logo">
+                   </div>
+              
+                
+                <div class="links">
+                    <p class="hover-links " id="IPL" onclick="onNavItemClick('IPL')">IPL</p>
+                    <p class="hover-links" id="finance" onclick="onNavItemClick('finance')">Finance</p>
+                    <p class="hover-links" id="politics" onclick="onNavItemClick('politics')">Politics </p>
+                </div>
+
+                <div class="search-box">
+                        <input type="text"  class="search-text" id="search-text" placeholder="e.g. science">
+                        <button class="search-button" id="search-button" onclick="SearchButtonClick()">Search</button>
+                </div>
+          </div>
+      </nav>
+
+      <div class="cards-container  container" id="cards-container">
+      </div>
+       
+      <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+               <img src="https://via.placeholder.com/400x200" alt="img" id="news-img">
+            </div>
+
+            <div class="card-content">
+                 <h3  id="news-title">This is title</h3>
+                 <h5 class="news-source" id="news-source">jkhuqhwefhiuh</h5>
+                 <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa quidem maxime eius iure eum aliquam 
+                  vitae quae fugit temporibus!</p>
+            </div>
+     </div>
+      </template>
+
+      <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
